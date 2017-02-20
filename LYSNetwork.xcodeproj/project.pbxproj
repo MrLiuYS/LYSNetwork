@@ -13,6 +13,7 @@
 		0D207A9C1E56E32C004C398A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D207A9A1E56E32C004C398A /* Main.storyboard */; };
 		0D207A9E1E56E32C004C398A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D207A9D1E56E32C004C398A /* Assets.xcassets */; };
 		0D207AA11E56E32C004C398A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D207A9F1E56E32C004C398A /* LaunchScreen.storyboard */; };
+		22FB335BDE6E1D1E07E392A1 /* libPods-LYSNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA5B65A11ED1A9CCB912650 /* libPods-LYSNetwork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0D207A9D1E56E32C004C398A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D207AA01E56E32C004C398A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D207AA21E56E32C004C398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BE96298652234F550A9EBB6 /* Pods-LYSNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYSNetwork/Pods-LYSNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA5B65A11ED1A9CCB912650 /* libPods-LYSNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYSNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0626E32E8DFD7E801F8E5D7 /* Pods-LYSNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYSNetwork/Pods-LYSNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FB335BDE6E1D1E07E392A1 /* libPods-LYSNetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0D207A901E56E32C004C398A /* LYSNetwork */,
 				0D207A8F1E56E32C004C398A /* Products */,
+				CD4F814B304D77256776137B /* Pods */,
+				B213B74D94547CE450928821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B213B74D94547CE450928821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA5B65A11ED1A9CCB912650 /* libPods-LYSNetwork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4F814B304D77256776137B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BE96298652234F550A9EBB6 /* Pods-LYSNetwork.debug.xcconfig */,
+				C0626E32E8DFD7E801F8E5D7 /* Pods-LYSNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D207AA51E56E32C004C398A /* Build configuration list for PBXNativeTarget "LYSNetwork" */;
 			buildPhases = (
+				B2B3B1E617D7084D3B525F82 /* [CP] Check Pods Manifest.lock */,
 				0D207A8A1E56E32C004C398A /* Sources */,
 				0D207A8B1E56E32C004C398A /* Frameworks */,
 				0D207A8C1E56E32C004C398A /* Resources */,
+				BCC2864DF3FCC2D1E29E5D2C /* [CP] Embed Pods Frameworks */,
+				C443AAA8AB97F6B8D68EE6BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2B3B1E617D7084D3B525F82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC2864DF3FCC2D1E29E5D2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYSNetwork/Pods-LYSNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C443AAA8AB97F6B8D68EE6BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYSNetwork/Pods-LYSNetwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D207A8A1E56E32C004C398A /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		0D207AA61E56E32C004C398A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE96298652234F550A9EBB6 /* Pods-LYSNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYSNetwork/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		0D207AA71E56E32C004C398A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0626E32E8DFD7E801F8E5D7 /* Pods-LYSNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYSNetwork/Info.plist;

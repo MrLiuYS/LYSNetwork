@@ -1,0 +1,39 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BuglyHotfix (1.1.0):
+    - BuglyHotfix/Core (= 1.1.0)
+  - BuglyHotfix/Core (1.1.0):
+    - JSPatch
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BuglyHotfix (~> 1.1.0)
+  - Masonry (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BuglyHotfix: 23c68e3e6770e9fd36682aa6150ed236d62bbbf6
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: ce83a96515cf9201d65eafd04e82293f295e38ee
+
+COCOAPODS: 1.1.1
