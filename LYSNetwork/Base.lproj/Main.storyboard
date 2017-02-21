@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="61h-BG-fWf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,45 +23,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://192.168.1.5:8081" borderStyle="roundedRect" placeholder="service:port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRr-yh-7W3">
-                                <rect key="frame" x="36" y="40" width="303" height="30"/>
+                                <rect key="frame" x="36" y="84" width="303" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-iu-rjz">
-                                <rect key="frame" x="36" y="90" width="303" height="30"/>
+                                <rect key="frame" x="36" y="134" width="303" height="30"/>
                                 <state key="normal" title="设置域名"/>
                                 <connections>
                                     <action selector="touchBaseUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecC-2x-D29"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iC-J6-wrM">
-                                <rect key="frame" x="36" y="140" width="303" height="30"/>
+                                <rect key="frame" x="36" y="184" width="303" height="30"/>
                                 <state key="normal" title="首页数据"/>
                                 <connections>
                                     <action selector="touchService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdY-rU-P1e"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQB-1z-O9B">
+                                <rect key="frame" x="36" y="244" width="303" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CQB-1z-O9B" firstAttribute="top" secondItem="8iC-J6-wrM" secondAttribute="bottom" constant="30" id="0j3-bt-rQj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c7C-iu-rjz" secondAttribute="trailing" constant="20" id="4BU-Ed-skC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CQB-1z-O9B" secondAttribute="bottom" constant="20" id="Az8-SI-QBP"/>
                             <constraint firstItem="c7C-iu-rjz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="BwJ-kl-CMb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8iC-J6-wrM" secondAttribute="trailing" constant="20" id="Ihx-Jc-0mn"/>
+                            <constraint firstItem="CQB-1z-O9B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="O5F-1C-GdK"/>
                             <constraint firstItem="jRr-yh-7W3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="al9-a8-bKJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jRr-yh-7W3" secondAttribute="trailing" constant="20" id="f1S-6f-KN0"/>
                             <constraint firstItem="jRr-yh-7W3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hO7-3c-0Fk"/>
                             <constraint firstItem="8iC-J6-wrM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="jIO-ce-VYO"/>
                             <constraint firstItem="c7C-iu-rjz" firstAttribute="top" secondItem="jRr-yh-7W3" secondAttribute="bottom" constant="20" id="lfG-fc-azS"/>
                             <constraint firstItem="8iC-J6-wrM" firstAttribute="top" secondItem="c7C-iu-rjz" secondAttribute="bottom" constant="20" id="mPo-ZX-Jwa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CQB-1z-O9B" secondAttribute="trailing" constant="20" id="xkQ-TN-JdP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ymK-YS-ZHA"/>
                     <connections>
                         <outlet property="baseUrlTF" destination="jRr-yh-7W3" id="cfH-AH-Jgg"/>
+                        <outlet property="homeDataTX" destination="CQB-1z-O9B" id="Scn-Tc-YaD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="905" y="791"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Qm-tM-dTp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61h-BG-fWf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ox-is-CrN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9wX-Gq-LIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDr-RD-cxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="791.15442278860576"/>
         </scene>
     </scenes>
 </document>

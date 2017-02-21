@@ -22,12 +22,14 @@ PODS:
     - JSPatch/Core (= 1.1.2)
   - JSPatch/Core (1.1.2)
   - Masonry (1.0.2)
+  - MJExtension (3.0.13)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - BuglyHotfix (~> 1.1.0)
   - Masonry (~> 1.0.2)
+  - MJExtension (~> 3.0.13)
   - SVProgressHUD (~> 2.1.2)
 
 SPEC CHECKSUMS:
@@ -35,8 +37,9 @@ SPEC CHECKSUMS:
   BuglyHotfix: 23c68e3e6770e9fd36682aa6150ed236d62bbbf6
   JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 9ec4d32d6f0b4889beb41ac23301cc6f2c816ea1
+PODFILE CHECKSUM: 4558533170c0aae65da1f945c56c8d815e245b2b
 
 COCOAPODS: 1.1.1

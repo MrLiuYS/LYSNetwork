@@ -52,6 +52,11 @@
                        httpMethod:LYSServiceHttpMethodGET
                           success:^(NSURLSessionDataTask *task, id responseObject) {
                               
+                              [SVProgressHUD dismiss];
+                              
+                              _homeDataTX.text = [NSString stringWithFormat:@"%@\n%@",task.response.URL,
+                                                  responseObject];
+                              
                           } failure:^(NSURLSessionDataTask *task, NSError *error) {
                               
                           }];
