@@ -9,6 +9,7 @@ targetsArray.each do |t|
     	pod 'AFNetworking', '~> 3.1.0'
     	pod 'BuglyHotfix', '~> 1.1.0'
     	pod 'Masonry', '~> 1.0.2'
+        pod 'SVProgressHUD', '~> 2.1.2'
         
     end
 end
